@@ -7,7 +7,7 @@
 from transformers import BertTokenizer, BertModel
 import csv
 
-
+##### The following function was coded with significant help of ChatGPT #####
 def get_attention_weights_cls(input_sent):
     """Take a sentence and extract the attention each token gets from the [cls] special token after the first layer.
         Return a list with token-attention score pairs."""
@@ -45,7 +45,7 @@ def get_attention_weights_cls(input_sent):
 
     return word_attention_list_avg
 
-
+##### The following function was coded with significant help of ChatGPT #####
 def get_attention_weights_avg_all_tokens(input_sent):
     """Take a sentence and calculate the average attention each token gets from the other tokens after the first layer.
     Return a list with token-attention score pairs."""
